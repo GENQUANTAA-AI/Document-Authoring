@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+myenv/
+*.egg-info/
+dist/
+build/
+*.pyc
+*.pyo
+*.pyd
+
+# Node
+node_modules/
+.next/
+out/
+*.log
+.npm
+.eslintcache
+
+# Environment
+.env
+.env.local
+.env*.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Sessions (user-generated content)
+sessions/
+backend/sessions/
+*.docx
+
+# Keep example files
+!backend/.env.example
+!frontend/.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build outputs
+*.egg
+*.whl

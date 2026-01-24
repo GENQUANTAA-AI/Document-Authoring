@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: sop-authoring-backend
+    env: python
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: ALLOWED_ORIGINS
+        sync: false
+    disk:
+      name: sessions-disk
+      mountPath: /opt/render/project/src/backend/sessions
+      sizeGB: 1
+
